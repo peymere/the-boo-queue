@@ -1,16 +1,17 @@
 import React from "react";
 
-function MovieCard() {
+
+function MovieCard({title, posterUrl, runtime, genre, ageRating, watchlist, starRating, releaseYear}) {
     return (
-        <div className= "col-md-2" >
-        <div className="card">
-            <h4>{"Midsommar (1900)"}</h4>
-            <img src={'https://render.fineartamerica.com/images/rendered/default/poster/8/10/break/images/artworkimages/medium/3/1-midsommar-fan-art-kathy-campbell.jpg'} alt={'Midsommar'}/>
-            <div className="card-body">
-                <p className="card-text"> Runtime: 122 minutes </p>
-                <p className="card-text"> Film Rating: R </p>
+        <div className= "col-md-3" >
+            <div className="card">
+                <h4>{title}({releaseYear})</h4>
+                <img src={posterUrl} alt={title}/>
+                <div className="card-body">
+                    <p className="card-text"> Runtime: {runtime} </p>
+                    <p className="card-text"> Film Rating: {ageRating} </p>
+                </div>
             </div>
-        </div>
         </div>
     );
 }
