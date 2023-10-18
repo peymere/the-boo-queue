@@ -2,7 +2,7 @@ import React from "react";
 
 function Watchlist() {
     return (
-        <ul className="cards"> </ul>
+        <ul id="watchList" className="cards"> </ul>
     );
 }
 
