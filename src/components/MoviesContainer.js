@@ -3,7 +3,7 @@ import MovieCard from "./MovieCard"
 import Sort from "./Sort";
 import Filter from "./Filter"
 
-function MoviesContainer({movies, setMoviesData}) {
+function MoviesContainer({movies}) {
     const [sortOrder, setSortOrder] = useState('default')
     const [filters, setFilters] = useState({
         genre: '',
@@ -41,7 +41,7 @@ function MoviesContainer({movies, setMoviesData}) {
     return (
         <div className="container">
             <Sort setSortOrder={setSortOrder} />
-            <Filter filters={filters} setFilters={setFilters} movies={sortedMovies}/>
+            <Filter filters={filters} setFilters={setFilters} />
             <div className="row">
                     {sortedMovies.map(movie => {
                         

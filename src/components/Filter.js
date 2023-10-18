@@ -1,6 +1,6 @@
 import React from "react";
 
-function Filter({filters, setFilters, filteredMovies}) {
+function Filter({filters, setFilters}) {
     
     return (
         <div>
