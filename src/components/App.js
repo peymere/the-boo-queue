@@ -12,6 +12,7 @@ function App() {
     const dataUrl = "https://halloween-movie-data.onrender.com/movies/"
 
     useEffect(() => {
+        setLoading(true)
         fetch(dataUrl)
             .then((r) => r.json())
             .then(movieData => {
@@ -44,7 +45,7 @@ function App() {
             (
                 <div className="app">
                     <Header />
-                    <MoviesContainer movies={moviesData} />
+                    <MoviesContainer movies={moviesData} loading={loading}/>
                     <NewMovieForm addMovie={addMovie} dataUrl={dataUrl} />
                     <Watchlist />
                 </div>
