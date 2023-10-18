@@ -8,10 +8,12 @@ import { Outlet } from "react-router-dom";
 
 function App() {
     const [moviesData, setMoviesData] = useState([]);
+    const [loading, setLoading] = useState(true)
 
     const dataUrl = "https://halloween-movie-data.onrender.com/movies/"
 
     useEffect(() => {
+        setLoading(true)
         fetch(dataUrl)
             .then((r) => r.json())
             .then(movieData => {
@@ -20,8 +22,10 @@ function App() {
                 const shuffledMovies = shuffleArray(movies)
                 
                 setMoviesData(shuffledMovies)
+                setLoading(false)
             })
             .catch(error => {console.error("Fetch Error: ", error);})
+            setLoading(false)
     }, [])
     const shuffleArray = (array) => {
         let shuffledArray = [...array];
@@ -41,14 +45,20 @@ function App() {
         movies: moviesData,
         addMovie,
         dataUrl,
+        loading,
     }
     return (
-        <div className="app">
-            <Header />
-            {/* <MoviesContainer movies={moviesData} />
-            <NewMovieForm addMovie={addMovie} dataUrl={dataUrl} />
-            <Watchlist /> */}
-            <Outlet context={context}/>
+        <div>
+            {loading ? ( <h2>Loading...</h2> ) : 
+            (
+                <div className="app">
+                    <Header />
+//                     <MoviesContainer movies={moviesData} loading={loading}/>
+//                     <NewMovieForm addMovie={addMovie} dataUrl={dataUrl} />
+//                     <Watchlist />
+                    <Outlet context={context}/>
+                </div>
+            )}
         </div>
     );
 }
