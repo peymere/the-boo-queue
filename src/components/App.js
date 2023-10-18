@@ -33,7 +33,7 @@ function App() {
     return (
         <div className="app">
             <Header />
-            <MoviesContainer movies={moviesData}/>
+            <MoviesContainer movies={moviesData} />
             <NewMovieForm />
             <Watchlist />
         </div>
