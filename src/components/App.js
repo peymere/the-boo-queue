@@ -7,6 +7,7 @@ import Watchlist from "./Watchlist";
 
 function App() {
     const [moviesData, setMoviesData] = useState([]);
+    const [loading, setLoading] = useState(true)
 
     const dataUrl = "https://halloween-movie-data.onrender.com/movies/"
 
@@ -19,8 +20,10 @@ function App() {
                 const shuffledMovies = shuffleArray(movies)
                 
                 setMoviesData(shuffledMovies)
+                setLoading(false)
             })
             .catch(error => {console.error("Fetch Error: ", error);})
+            setLoading(false)
     }, [])
     const shuffleArray = (array) => {
         let shuffledArray = [...array];
@@ -36,11 +39,17 @@ function App() {
     }
     // console.log(dataUrl)
     return (
-        <div className="app">
-            <Header />
-            <MoviesContainer movies={moviesData} />
-            <NewMovieForm addMovie={addMovie} dataUrl={dataUrl} />
-            <Watchlist />
+        <div>
+            {loading ? ( <h2>Loading...</h2> ) : 
+            (
+                <div className="app">
+                    <Header />
+                    <MoviesContainer movies={moviesData} />
+                    <NewMovieForm addMovie={addMovie} dataUrl={dataUrl} />
+                    <Watchlist />
+                </div>
+            )}
+            
         </div>
     );
 }
