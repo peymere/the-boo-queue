@@ -11,7 +11,7 @@ function MoviesContainer({movies}) {
     })
     
     const filteredMovies = movies.filter((movie) => {
-        console.log(movie['age-rating'])
+        // console.log(movie['age-rating'])
         if (filters.genre && !movie.genre.includes(filters.genre) ) {
             return false
         }
@@ -23,7 +23,6 @@ function MoviesContainer({movies}) {
 
     const sortedMovies = [...filteredMovies]
 
-
     if (sortOrder === 'oldToNew') {
         sortedMovies.sort((a, b) => a['release-year'] - b['release-year'])
     } else if (sortOrder === 'newToOld') {
@@ -33,10 +32,6 @@ function MoviesContainer({movies}) {
         } else if (sortOrder === 'shortToLong') {
         sortedMovies.sort((a, b) => a.runtime - b.runtime)
     }
-
-    console.log('filters:', filters);
-    console.log('sortedMovies:', sortedMovies);
-    console.log('filteredMovies:', filteredMovies);
     
     return (
         <div className="container">

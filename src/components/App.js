@@ -9,7 +9,7 @@ import { Outlet } from "react-router-dom";
 function App() {
     const [moviesData, setMoviesData] = useState([]);
 
-    const dataUrl = "https://halloween-movie-data.onrender.com/movies"
+    const dataUrl = "https://halloween-movie-data.onrender.com/movies/"
 
     useEffect(() => {
         fetch(dataUrl)
@@ -31,11 +31,16 @@ function App() {
         }
         return shuffledArray;
     }
+
+    const addMovie = (movie) => {
+        setMoviesData([...moviesData, movie])
+    }
+    // console.log(dataUrl)
     return (
         <div className="app">
             <Header />
             <MoviesContainer movies={moviesData} />
-            <NewMovieForm />
+            <NewMovieForm addMovie={addMovie} dataUrl={dataUrl} />
             <Watchlist />
         </div>
     );
