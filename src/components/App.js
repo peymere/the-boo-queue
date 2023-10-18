@@ -32,7 +32,7 @@ function App() {
     return (
         <div className="app">
             <Header />
-            <MoviesContainer movies={moviesData}/>
+            <MoviesContainer movies={moviesData} setMoviesData={setMoviesData}/>
             <NewMovieForm />
         </div>
     );
