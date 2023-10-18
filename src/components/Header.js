@@ -1,5 +1,4 @@
 import React from "react";
-import NavBar from "./NavBar"
 import HalloweenCountdown from "./HalloweenCountdown"
 
 function Header() {
@@ -11,7 +10,6 @@ function Header() {
             <h5>
                 <HalloweenCountdown/> 
             </h5>
-            <NavBar/>
         </header>
     );
 }

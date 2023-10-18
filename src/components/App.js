@@ -4,6 +4,7 @@ import Header from "./Header"
 import MoviesContainer from "./MoviesContainer";
 import NewMovieForm from "./NewMovieForm";
 import Watchlist from "./Watchlist";
+import NavBar from "./NavBar";
 import { Outlet } from "react-router-dom";
 
 function App() {
@@ -52,11 +53,14 @@ function App() {
             {loading ? ( <h2>Loading...</h2> ) : 
             (
                 <div className="app">
-                    <Header />
-//                     <MoviesContainer movies={moviesData} loading={loading}/>
+                    <NavBar/>
+{/* //                     <MoviesContainer movies={moviesData} loading={loading}/>
 //                     <NewMovieForm addMovie={addMovie} dataUrl={dataUrl} />
-//                     <Watchlist />
+//                     <Watchlist /> */}
+                    <div className="main-content">
+                    <Header />
                     <Outlet context={context}/>
+                    </div>
                 </div>
             )}
         </div>
