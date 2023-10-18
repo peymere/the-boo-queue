@@ -15,7 +15,6 @@ function MoviesContainer() {
     const [visibleMovies, setVisibleMovies] = useState(8)
     
     const filteredMovies = movies.filter((movie) => {
-        // console.log(movie['age-rating'])
         if (filters.genre && !movie.genre.includes(filters.genre) ) {
             return false
         }
@@ -48,11 +47,8 @@ function MoviesContainer() {
             <div className="row">
             {loading ? ( <h2>Loading Movies...</h2> ) : (
                     sortedMovies.slice(0, visibleMovies).map(movie => (
-                            <MovieCard key={movie.id} title={movie.title} posterUrl={movie.posterUrl} runtime={movie.runtime} genre={movie.genre} ageRating={movie['age-rating']} watchlist={movie.watchlist} starRating={movie['star-rating']} releaseYear={movie['release-year']} 
-                            />
-                        )
-                    )
-            )}   
+                            <MovieCard key={movie.id} title={movie.title} posterUrl={movie.posterUrl} runtime={movie.runtime} genre={movie.genre} ageRating={movie['age-rating']} watchlist={movie.watchlist} starRating={movie['star-rating']} releaseYear={movie['release-year']} /> )
+                    ))}   
             </div>
             <div className="button-container">
                 <button id="load-more" onClick={loadMore}>Load More</button>

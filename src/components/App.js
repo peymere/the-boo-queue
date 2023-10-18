@@ -36,12 +36,10 @@ function App() {
         }
         return shuffledArray;
     }
-
     
     const addMovie = (movie) => {
         setMoviesData([...moviesData, movie])
     }
-    // console.log(dataUrl)
     const context= {
         movies: moviesData,
         addMovie,
