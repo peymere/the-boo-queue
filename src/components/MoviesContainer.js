@@ -9,6 +9,7 @@ function MoviesContainer({movies}) {
         genre: '',
         ageRating: ''
     })
+    const [visibleMovies, setVisibleMovies] = useState(8)
     
     const filteredMovies = movies.filter((movie) => {
         // console.log(movie['age-rating'])
@@ -32,18 +33,24 @@ function MoviesContainer({movies}) {
         } else if (sortOrder === 'shortToLong') {
         sortedMovies.sort((a, b) => a.runtime - b.runtime)
     }
+
+    const loadMore = () => {
+        setVisibleMovies(visibleMovies + 8)
+    }
     
     return (
         <div className="container">
             <Sort setSortOrder={setSortOrder} />
             <Filter filters={filters} setFilters={setFilters} />
             <div className="row">
-                    {sortedMovies.map(movie => {
-                        
+                    {sortedMovies.slice(0, visibleMovies).map(movie => {
                         return(
                             <MovieCard key={movie.id} title={movie.title} posterUrl={movie.posterUrl} runtime={movie.runtime} genre={movie.genre} ageRating={movie['age-rating']} watchlist={movie.watchlist} starRating={movie['star-rating']} releaseYear={movie['release-year']} />
                         )
-                    })} 
+                    })}   
+            </div>
+            <div className="button-container">
+                <button id="load-more" onClick={loadMore}>Load More</button>
             </div>
         </div>
     );
