@@ -1,10 +1,10 @@
 import React, {useState} from "react";
-import NavBar from "./NavBar";
+// import NavBar from "./NavBar";
 
 function NewMovieForm() {
     return (
     <div className="new-movie-form">
-        <header><NavBar/> </header>
+        {/* <header><NavBar/> </header> */}
         <h4>Add your own: </h4>
         <form>
             <div>

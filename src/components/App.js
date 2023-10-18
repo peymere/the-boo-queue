@@ -4,6 +4,7 @@ import Header from "./Header"
 import MoviesContainer from "./MoviesContainer";
 import NewMovieForm from "./NewMovieForm";
 import Watchlist from "./Watchlist";
+import { Outlet } from "react-router-dom";
 
 function App() {
     const [moviesData, setMoviesData] = useState([]);
