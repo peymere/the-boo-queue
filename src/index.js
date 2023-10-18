@@ -7,23 +7,28 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { createBrowserRouter, RouterProvider} from "react-router-dom"
 import NewMovieForm from './components/NewMovieForm';
 import Watchlist from './components/Watchlist';
+import ErrorPage from './components/ErrorPage';
 
 const router = createBrowserRouter([
   {
     path: "/addmovie",
-    element: <NewMovieForm />
+    element: <NewMovieForm />,
+    errorElement: <ErrorPage/>
   },
   {
     path: "/",
-    element: <App />
+    element: <App />,
+    errorElement: <ErrorPage/>
   },
   {
     path: "/movies",
-    element: <App />
+    element: <App />,
+    errorElement: <ErrorPage/>
   },
   {
     path: "/watchlist",
-    element: <Watchlist />
+    element: <Watchlist />,
+    errorElement: <ErrorPage/>
   }
 ]);
 
