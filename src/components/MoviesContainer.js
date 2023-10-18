@@ -11,7 +11,7 @@ function MoviesContainer({movies}) {
     })
     
     const filteredMovies = movies.filter((movie) => {
-        console.log(movie['age-rating'])
+        // console.log(movie['age-rating'])
         if (filters.genre && !movie.genre.includes(filters.genre) ) {
             return false
         }
