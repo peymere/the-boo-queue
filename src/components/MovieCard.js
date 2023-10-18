@@ -6,7 +6,7 @@ function MovieCard({title, posterUrl, runtime, genre, ageRating, watchlist, star
         <div className= "col-md-3" >
             <div className="card">
                 <h4>{title}({releaseYear})</h4>
-                <img src={posterUrl} alt={title}/>
+                <img src={posterUrl} alt={title} loading="lazy" />
                 <div className="card-body">
                     <p className="card-text"> Runtime: {runtime} minutes</p>
                     <p className="card-text"> Film Rating: {ageRating} </p>

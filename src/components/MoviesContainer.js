@@ -3,7 +3,7 @@ import MovieCard from "./MovieCard"
 import Sort from "./Sort";
 import Filter from "./Filter"
 
-function MoviesContainer({movies}) {
+function MoviesContainer({movies, loading}) {
     const [sortOrder, setSortOrder] = useState('default')
     const [filters, setFilters] = useState({
         genre: '',
@@ -43,11 +43,13 @@ function MoviesContainer({movies}) {
             <Sort setSortOrder={setSortOrder} />
             <Filter filters={filters} setFilters={setFilters} />
             <div className="row">
-                    {sortedMovies.slice(0, visibleMovies).map(movie => {
-                        return(
-                            <MovieCard key={movie.id} title={movie.title} posterUrl={movie.posterUrl} runtime={movie.runtime} genre={movie.genre} ageRating={movie['age-rating']} watchlist={movie.watchlist} starRating={movie['star-rating']} releaseYear={movie['release-year']} />
+            {loading ? ( <h2>Loading Movies...</h2> ) : (
+                    sortedMovies.slice(0, visibleMovies).map(movie => (
+                            <MovieCard key={movie.id} title={movie.title} posterUrl={movie.posterUrl} runtime={movie.runtime} genre={movie.genre} ageRating={movie['age-rating']} watchlist={movie.watchlist} starRating={movie['star-rating']} releaseYear={movie['release-year']} 
+                            />
                         )
-                    })}   
+                    )
+            )}   
             </div>
             <div className="button-container">
                 <button id="load-more" onClick={loadMore}>Load More</button>
