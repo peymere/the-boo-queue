@@ -1,7 +1,9 @@
 import React, {useState} from "react";
 // import NavBar from "./NavBar";
+import { useOutletContext } from "react-router";
 
-function NewMovieForm({addMovie, dataUrl}) {
+function NewMovieForm() {
+    const {addMovie, dataUrl} = useOutletContext();
     const [newMovieTitle, setNewMovieTitle] = useState('')
     const [newMoviePosterUrl, setNewMoviePosterUrl] = useState('')
     const [newMovieRuntime, setNewMovieRuntime] = useState(0)

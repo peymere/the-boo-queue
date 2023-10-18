@@ -2,8 +2,10 @@ import React, {useState} from "react";
 import MovieCard from "./MovieCard"
 import Sort from "./Sort";
 import Filter from "./Filter"
+import { useOutletContext } from "react-router";
 
-function MoviesContainer({movies}) {
+function MoviesContainer() {
+    const {movies}= useOutletContext();
     const [sortOrder, setSortOrder] = useState('default')
     const [filters, setFilters] = useState({
         genre: '',

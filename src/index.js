@@ -8,54 +8,54 @@ import { createBrowserRouter, RouterProvider} from "react-router-dom"
 import NewMovieForm from './components/NewMovieForm';
 import Watchlist from './components/Watchlist';
 import ErrorPage from './components/ErrorPage';
-// import MoviesContainer from './components/MoviesContainer';
+import MoviesContainer from './components/MoviesContainer';
 
-const router = createBrowserRouter([
-  {
-    path: "/addmovie",
-    element: <NewMovieForm />,
-    errorElement: <ErrorPage/>
-  },
-  {
-    path: "/",
-    element: <App />,
-    errorElement: <ErrorPage/>
-  },
-  {
-    path: "/movies",
-    element: <App />,
-    errorElement: <ErrorPage/>
-  },
-  {
-    path: "/watchlist",
-    element: <Watchlist />,
-    errorElement: <ErrorPage/>
-  }
-]);
-
-// const router = createBrowserRouter ([
+// const router = createBrowserRouter([
 //   {
 //     path: "/",
-//     element: <App/>,
-//     errorElement: <ErrorPage />,
-//     children: [
-//           {
-//             path: "/addmovie",
-//             element: <NewMovieForm />,
-//           },
-//           {
-//             path: "/movies",
-//             element: <MoviesContainer />,
+//     element: <App />,
+//     errorElement: <ErrorPage/>
+//   },
+//   {
+//     path: "/addmovie",
+//     element: <NewMovieForm />,
+//     errorElement: <ErrorPage/>
+//   },
+//   {
+//     path: "/movies",
+//     element: <App />,
+//     errorElement: <ErrorPage/>
+//   },
+//   {
+//     path: "/watchlist",
+//     element: <Watchlist />,
+//     errorElement: <ErrorPage/>
+//   }
+// ]);
+
+const router = createBrowserRouter ([
+  {
+    path: "/",
+    element: <App/>,
+    errorElement: <ErrorPage />,
+    children: [
+          {
+            path: "/addmovie",
+            element: <NewMovieForm />,
+          },
+          {
+            path: "/movies",
+            element: <MoviesContainer />,
             
-//           },
-//           {
-//             path: "/watchlist",
-//             element: <Watchlist />,
+          },
+          {
+            path: "/watchlist",
+            element: <Watchlist />,
             
-//           }
-//       ]
-//     }
-// ])
+          }
+      ]
+    }
+])
 
 
 

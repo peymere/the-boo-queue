@@ -32,16 +32,23 @@ function App() {
         return shuffledArray;
     }
 
+    
     const addMovie = (movie) => {
         setMoviesData([...moviesData, movie])
     }
     // console.log(dataUrl)
+    const context= {
+        movies: moviesData,
+        addMovie,
+        dataUrl,
+    }
     return (
         <div className="app">
             <Header />
-            <MoviesContainer movies={moviesData} />
+            {/* <MoviesContainer movies={moviesData} />
             <NewMovieForm addMovie={addMovie} dataUrl={dataUrl} />
-            <Watchlist />
+            <Watchlist /> */}
+            <Outlet context={context}/>
         </div>
     );
 }
