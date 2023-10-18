@@ -3,6 +3,7 @@ import React, {useState, useEffect} from "react";
 import Header from "./Header"
 import MoviesContainer from "./MoviesContainer";
 import NewMovieForm from "./NewMovieForm";
+import Watchlist from "./Watchlist";
 
 function App() {
     const [moviesData, setMoviesData] = useState([]);
@@ -34,6 +35,7 @@ function App() {
             <Header />
             <MoviesContainer movies={moviesData}/>
             <NewMovieForm />
+            <Watchlist />
         </div>
     );
 }
