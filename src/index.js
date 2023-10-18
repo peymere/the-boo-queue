@@ -4,12 +4,48 @@ import './index.css';
 import App from './components/App';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { createBrowserRouter, RouterProvider} from "react-router-dom"
+import NewMovieForm from './components/NewMovieForm';
+import Watchlist from './components/Watchlist';
+import ErrorPage from './components/ErrorPage';
+
+const router = createBrowserRouter([
+  {
+    path: "/addmovie",
+    element: <NewMovieForm />,
+    errorElement: <ErrorPage/>
+  },
+  {
+    path: "/",
+    element: <App />,
+    errorElement: <ErrorPage/>
+  },
+  {
+    path: "/movies",
+    element: <App />,
+    errorElement: <ErrorPage/>
+  },
+  {
+    path: "/watchlist",
+    element: <Watchlist />,
+    errorElement: <ErrorPage/>
+  }
+]);
+
+
+
+
+
+
+
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+<RouterProvider router={router}/>
+  // <React.StrictMode>
+  //   <App />
+  // </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function

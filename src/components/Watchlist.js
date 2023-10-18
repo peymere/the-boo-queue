@@ -1,8 +1,12 @@
 import React from "react";
+import NavBar from "./NavBar";
 
 function Watchlist() {
     return (
-        <ul id="watchList" className="cards"> </ul>
+        <ul className="cards"> 
+        <header><NavBar/></header>
+        <h1>Watchlist</h1>
+        </ul>
     );
 }
 
