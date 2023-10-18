@@ -51,7 +51,6 @@ const router = createBrowserRouter ([
           {
             path: "/watchlist",
             element: <Watchlist />,
-            
           }
       ]
     }

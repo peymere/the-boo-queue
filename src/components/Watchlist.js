@@ -27,3 +27,23 @@ export default Watchlist;
 //     </div>
 // ))
 // 
+
+ // WATCHLIST FEATURES FROM APP COMPONENT
+//  const onAddToWatchlist = (selectedMovie) => {
+//     const updatedMoviesData = moviesData.map((movie) => 
+//     movie.id === selectedMovie.id ? {...movie, watchlist: true} :
+//     movie
+//     )
+//     setMoviesData(updatedMoviesData)
+//     console.log(moviesData)
+// }
+
+// const onRemoveFromWatchlist = (selectedMovie) => {
+//     const updatedWatchlist = moviesData.map((movie) => 
+//     movie.id === selectedMovie.id ? {...movie, watchlist: false} :
+//     movie
+//     )
+//     setMoviesData(updatedWatchlist)
+// }
+
+// ____________________ 

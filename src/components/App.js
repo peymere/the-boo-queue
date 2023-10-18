@@ -17,10 +17,8 @@ function App() {
         fetch(dataUrl)
             .then((r) => r.json())
             .then(movieData => {
-                
                 const movies = movieData
                 const shuffledMovies = shuffleArray(movies)
-                
                 setMoviesData(shuffledMovies)
                 setLoading(false)
             })
@@ -35,7 +33,8 @@ function App() {
         }
         return shuffledArray;
     }
-    
+   
+
     const addMovie = (movie) => {
         setMoviesData([...moviesData, movie])
     }
