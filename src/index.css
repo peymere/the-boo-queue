@@ -44,6 +44,7 @@ code {
 } */
 
 .site-header {
+  padding-top: 30px;
   font-family: 'Metal Mania', Courier, monospace;
   text-align: center;
   font-size: calc(20px + 18vh);
@@ -310,7 +311,7 @@ code {
 
 .custom-navbar {
   background-color: rgb(236, 113, 13);
-  font-family: 'Metal Mania';
+  font-family: 'Hellghost';
   font-weight: bold;
   font-size: 1.5rem;
   height: 4.5rem
@@ -367,7 +368,7 @@ code {
 }
 
 .new-movie-form h4 {
-  font-family: 'Metal Mania';
+  font-family: 'hallowed grounds';
   color:rgb(236, 113, 13);
   font-size: 2rem;
 }
