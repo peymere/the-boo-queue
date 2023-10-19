@@ -7,6 +7,7 @@ import About from "./About";
 import NavBar from "./NavBar";
 import { Outlet } from "react-router-dom";
 
+
 function App() {
     const [moviesData, setMoviesData] = useState([]);
     const [loading, setLoading] = useState(true)

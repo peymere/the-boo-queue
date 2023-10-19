@@ -16,13 +16,13 @@ code {
     monospace;
 }
 
-.custom-navbar {
+/* .custom-navbar {
   background-color: rgb(236, 113, 13);
 }
 
 .main-content {
   margin-top: 70px;
-}
+} */
 
 .site-header {
   font-family: 'Metal Mania', Courier, monospace;
@@ -124,3 +124,280 @@ code {
   }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.custom-navbar {
+  background-color: rgb(236, 113, 13);
+  font-family: 'Metal Mania';
+  font-weight: bold;
+  /* font-size: 2rem; */
+}
+
+@media (max-width: 768px) {
+  .custom-navbar {
+    width: calc(100%);
+    height: calc(10% - 20px);
+    font-size: 2rem;
+  }
+
+}
+@media (max-width: 576px) {
+  .custom-navbar {
+    width: calc(100%);
+    height: calc(1% - 20px);
+    font-size: 0.5rem;
+  }
+}
+
+.main-content {
+  margin-top: 15vh;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  width: 100%;
+  background-color: rgb(236, 113, 13);
+}
+
+.nav-links li{
+  background-color: rgb(236, 113, 13);
+  margin: 0 100px;
+}
+
+.nav-link {
+  text-decoration: none;
+  flex: 1;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.new-movie-form h4 {
+  font-family: 'Creepster';
+  color:rgb(236, 113, 13);
+
+}
+
+.new-movie-form label {
+  font-family: 'Metal Mania';
+  color: rgb(236, 113, 13);
+
+}
+
+
+.new-movie-form input {
+ background-color: rgb(236, 113, 13);
+
+}
+
+.new-movie-form select {
+  background-color: rgb(236, 113, 13);
+}
+
+.new-movie-form button {
+  background-color: #fff6a9;
+}
+
+.new-movie-form {
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+  border: 1px solid #ccc;
+  padding: 20px;
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+  height: 100%;
+
+}
+
+form {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.new-movie-form div {
+  margin: 10px 0;
+}
+
+.new-movie-form input, select {
+  padding: 5px;
+  width: 100%;
+}
