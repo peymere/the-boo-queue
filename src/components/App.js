@@ -3,7 +3,7 @@ import React, {useState, useEffect} from "react";
 import Header from "./Header"
 import MoviesContainer from "./MoviesContainer";
 import NewMovieForm from "./NewMovieForm";
-import Watchlist from "./Watchlist";
+import About from "./About";
 import NavBar from "./NavBar";
 import { Outlet } from "react-router-dom";
 
@@ -52,12 +52,9 @@ function App() {
             (
                 <div className="app">
                     <NavBar/>
-{/* //                     <MoviesContainer movies={moviesData} loading={loading}/>
-//                     <NewMovieForm addMovie={addMovie} dataUrl={dataUrl} />
-//                     <Watchlist /> */}
                     <div className="main-content">
-                    <Header />
-                    <Outlet context={context}/>
+                        <Header />
+                        <Outlet context={context}/>
                     </div>
                 </div>
             )}
