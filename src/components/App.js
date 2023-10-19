@@ -28,7 +28,11 @@ function App() {
             .catch(error => {console.error("Fetch Error: ", error);})
             setLoading(false)
     }, [])
-
+/**
+ * this shuffles the elements of an array passed into it
+ * @param {*} array the array of movies
+ * @returns a shuffled array of the original movie array
+ */
     const shuffleArray = (array) => {
         let shuffledArray = [...array];
         for (let i = shuffledArray.length - 1; i > 0; i--) {

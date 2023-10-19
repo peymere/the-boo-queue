@@ -25,7 +25,7 @@ function MoviesContainer() {
     })
 
     const sortedMovies = [...filteredMovies]
-
+ 
     if (sortOrder === 'oldToNew') {
         sortedMovies.sort((a, b) => a['release-year'] - b['release-year'])
     } else if (sortOrder === 'newToOld') {
