@@ -6,6 +6,7 @@ import NewMovieForm from "./NewMovieForm";
 import About from "./About";
 import NavBar from "./NavBar";
 import { Outlet } from "react-router-dom";
+import Footer from "./Footer";
 
 
 function App() {
@@ -53,12 +54,13 @@ function App() {
         loading,
     }
     return (
-        <div>
+        <div className="app-container">
             <div className="app">
                 <NavBar/>
                 <div className="main-content">
                     <Header />
                     <Outlet context={context}/>
+                    <Footer />
                 </div>
             </div>
         </div>
