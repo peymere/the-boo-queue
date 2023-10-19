@@ -42,8 +42,14 @@ function MoviesContainer() {
 
     return (
         <div className="container">
-            <Sort setSortOrder={setSortOrder} />
-            <Filter filters={filters} setFilters={setFilters} />
+            <div className="sort-filter-container">
+                <div className="sameRow">
+                    <Sort setSortOrder={setSortOrder} />
+                </div>
+                <div className="sameRow">
+                    <Filter filters={filters} setFilters={setFilters} />
+                </div>
+            </div>
             <div className="movie-container">
             {loading ? ( <h2>Loading Movies...</h2> ) : (
                     sortedMovies.slice(0, visibleMovies).map(movie => (
