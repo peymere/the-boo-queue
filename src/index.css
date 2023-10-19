@@ -347,15 +347,15 @@ code {
 }
 
 .new-movie-form h4 {
-  font-family: 'Creepster';
+  font-family: 'Metal Mania';
   color:rgb(236, 113, 13);
-
+  font-size: 2rem;
 }
 
 .new-movie-form label {
-  font-family: 'Metal Mania';
+  font-family: 'Creepster';
   color: rgb(236, 113, 13);
-
+  font-size: 1.5rem;
 }
 
 
@@ -369,7 +369,8 @@ code {
 }
 
 .new-movie-form button {
-  background-color: #fff6a9;
+  background-color: #3a04539f;
+  color: rgb(235, 125, 36)
 }
 
 .new-movie-form {
@@ -377,20 +378,22 @@ code {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 50vh;
-  border: 1px solid #ccc;
+  height: 100vh;
   padding: 20px;
-  max-width: 400px;
+  max-width: 50%;
   margin: 0 auto;
   text-align: center;
   height: 100%;
-
+  border: 5px solid #3a04539f;
+  box-shadow: 0 0 20px rgb(65, 21, 116);
+  
 }
 
 form {
   display:flex;
   flex-direction: column;
   align-items: center;
+  width: 50%
 }
 
 .new-movie-form div {
@@ -398,6 +401,7 @@ form {
 }
 
 .new-movie-form input, select {
-  padding: 5px;
+  padding: 2px;
   width: 100%;
+  
 }

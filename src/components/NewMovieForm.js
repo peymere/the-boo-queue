@@ -45,7 +45,7 @@ function NewMovieForm() {
     return (
     <div className="new-movie-form">
         {/* <header><NavBar/> </header> */}
-        <h4>Add your own: </h4>
+        <h4>🧛🎃🧟👻Add your own🕷️🎃💀🕷️</h4>
         <form id="new-movie-form" onSubmit={handleSubmit}>
             <div>
                 <label>Title:</label>
