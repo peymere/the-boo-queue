@@ -448,14 +448,14 @@ code {
 }
 @media (max-width: 576px) {
   .custom-navbar {
-    width: calc(100%);
+    width: calc(54%);
     height: calc(1% - 20px);
     font-size: 0.5rem;
   }
 }
 
 .main-content {
-  margin-top: 15vh;
+  margin-top: 6.5vh;
 }
 
 .nav-links {
@@ -514,9 +514,10 @@ code {
   background-color: #3a04539f;
   color: rgb(235, 125, 36);
   font-family: 'Creepster';
-  width: 10rem;
-  height: 4rem;
-  font-size: 1.8rem;
+  width: 11rem;
+  height: 4.5rem;
+  font-size: 2rem;
+  margin-top: 1rem;
 }
 
 .new-movie-form button:hover {
@@ -554,6 +555,7 @@ form {
   padding: 2px;
   width: 100%;
   font-family: "Bodoni";
+  font-size: 1.2rem;
   color: rgb(235, 125, 36)
 }
 
@@ -561,9 +563,11 @@ form {
   padding: 2px;
   width: 100%;
   font-family: "Bodoni";
-  color: rgb(235, 125, 36)
+  color: rgb(235, 125, 36);
+  font-size: 1.2rem;
 }
 
 ::placeholder {
-  color: rgb(235, 125, 36)
+  color: rgb(235, 125, 36);
+  text-align: center;
 }
