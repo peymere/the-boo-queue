@@ -39,19 +39,19 @@ function MoviesContainer() {
     const loadMore = () => {
         setVisibleMovies(visibleMovies + 8)
     }
-    
+
     return (
         <div className="container">
             <Sort setSortOrder={setSortOrder} />
             <Filter filters={filters} setFilters={setFilters} />
-            <div className="row">
+            <div className="movie-container">
             {loading ? ( <h2>Loading Movies...</h2> ) : (
                     sortedMovies.slice(0, visibleMovies).map(movie => (
                             <MovieCard key={movie.id} title={movie.title} posterUrl={movie.posterUrl} runtime={movie.runtime} genre={movie.genre} ageRating={movie['age-rating']} watchlist={movie.watchlist} starRating={movie['star-rating']} releaseYear={movie['release-year']} /> )
                     ))}   
             </div>
             <div className="button-container">
-                <button id="load-more" onClick={loadMore}>Load More</button>
+                <button className="load-more" onClick={loadMore}>Load More</button>
             </div>
         </div>
     );

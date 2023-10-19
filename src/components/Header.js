@@ -5,11 +5,11 @@ function Header() {
     return (
         <header>
             <h1 className="site-header">
-                Binge of the Banshees
+                THE BOO QUEUE
             </h1>
-            <h1 className="header-test-1">THE BOO QUEUE</h1>
+            {/* <h1 className="header-test-1">THE BOO QUEUE</h1>
             <h1 className="header-test-2">Gore & Giggles Gathering</h1>
-            <h1 className="header-test-3">EERIE ENCORES</h1>
+            <h1 className="header-test-3">EERIE ENCORES</h1> */}
             <h5>
                 <HalloweenCountdown/> 
             </h5>

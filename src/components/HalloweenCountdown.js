@@ -25,8 +25,8 @@ function HalloweenCountdown() {
     }, []);
   
     return (
-      <div>
-        <h6>Countdown to Halloween:</h6>
+      <div className="countdown-container">
+        <h3>Countdown to Halloween:</h3>
         <p> {countdown.days} days {countdown.hours} hours {countdown.minutes} minutes {countdown.seconds} seconds</p>
       </div>
     );
