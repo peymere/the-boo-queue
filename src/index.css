@@ -434,7 +434,8 @@ code {
   background-color: rgb(236, 113, 13);
   font-family: 'Metal Mania';
   font-weight: bold;
-  /* font-size: 2rem; */
+  font-size: 1.5rem;
+  height: 4.5rem
 }
 
 @media (max-width: 768px) {
@@ -471,11 +472,19 @@ code {
   margin: 0 100px;
 }
 
+.nav-links li:hover {
+  text-shadow: 0 0 7px #eeff00;
+}
+
 .nav-link {
   text-decoration: none;
   flex: 1;
   text-align: center;
   padding: 10px 0;
+}
+
+.nav-link:hover {
+  transform: scale(1.5);
 }
 
 .new-movie-form h4 {
@@ -485,24 +494,33 @@ code {
 }
 
 .new-movie-form label {
-  font-family: 'Creepster';
+  font-family: 'Chiller';
+  font-weight: bold;
   color: rgb(236, 113, 13);
   font-size: 1.5rem;
 }
 
 
 .new-movie-form input {
- background-color: rgb(236, 113, 13);
+ background-color: #3a04539f;
 
 }
 
 .new-movie-form select {
-  background-color: rgb(236, 113, 13);
+  background-color: #3a04539f;
 }
 
 .new-movie-form button {
   background-color: #3a04539f;
-  color: rgb(235, 125, 36)
+  color: rgb(235, 125, 36);
+  font-family: 'Creepster';
+  width: 10rem;
+  height: 4rem;
+  font-size: 1.8rem;
+}
+
+.new-movie-form button:hover {
+  text-shadow: 0 0 5px yellow;
 }
 
 .new-movie-form {
@@ -532,8 +550,20 @@ form {
   margin: 10px 0;
 }
 
-.new-movie-form input, select {
+.new-movie-form input{
   padding: 2px;
   width: 100%;
-  
+  font-family: "Bodoni";
+  color: rgb(235, 125, 36)
+}
+
+.new-movie-form select {
+  padding: 2px;
+  width: 100%;
+  font-family: "Bodoni";
+  color: rgb(235, 125, 36)
+}
+
+::placeholder {
+  color: rgb(235, 125, 36)
 }

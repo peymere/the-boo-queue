@@ -26,7 +26,7 @@ function NavBar() {
         to= "/addmovie"
         className="nav-link" 
         >
-          Add a movie!
+          Add a movie
         </NavLink>
         </li>
         </ul>
