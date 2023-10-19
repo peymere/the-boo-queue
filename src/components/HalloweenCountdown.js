@@ -26,8 +26,28 @@ function HalloweenCountdown() {
   
     return (
       <div className="countdown-container">
-        <h3>Countdown to Halloween:</h3>
-        <p> {countdown.days} days {countdown.hours} hours {countdown.minutes} minutes {countdown.seconds} seconds</p>
+        <h3 className="countdown-title">Countdown to Halloween:</h3>
+        <div className="clock-container">
+          <div className="components-container">
+            <div className="days-container">
+              <div className="triangle"></div>
+              <div className="days">{countdown.days}</div>
+              <div className="days-label">Days</div>
+            </div>
+            <div class="hours-container">
+              <div class="hours">{countdown.hours}</div>
+              <div class="hours-label">Hours</div>
+            </div>
+            <div class="minutes-container">
+              <div class="minutes">{countdown.minutes}</div>
+              <div class="minutes-label">Minutes</div>
+            </div>
+            <div class="seconds-container">
+              <div class="seconds">{countdown.seconds}</div>
+              <div class="seconds-label">Seconds</div>
+            </div>
+          </div>
+        </div>
       </div>
     );
 };
