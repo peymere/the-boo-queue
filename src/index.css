@@ -1,3 +1,7 @@
+* {
+  background: black;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -20,6 +24,103 @@ code {
   margin-top: 70px;
 }
 
+.site-header {
+  font-family: 'Metal Mania', Courier, monospace;
+  text-align: center;
+  font-size: calc(20px + 18vh);
+  line-height: calc(20px + 20vh);
+  text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+  color: #fff6a9;
+  animation: blink 12s infinite;
+  -webkit-animation: blink 12s infinite;
+}
 
+.countdown-container {
+  text-align: center;
+  color: white;
+}
 
+.movie-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.movie-card {
+  width: calc(25% - 20px); 
+  margin: 10px;
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: center;
+  color: aliceblue;
+  background: black;
+}
+
+.card-body{
+  background: black;
+}
+
+.card-text {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  /* background: black; */
+}
+.movie-img{
+  max-width: 100%;
+  max-height: 350px;
+  height: auto;
+}
+
+.movie-title {
+  font-family: 'Bodoni Moda', serif;
+  font-weight: bold;
+  font-size: 1.4rem;
+  /* background: black; */
+
+}
+.button-container {
+  text-align: center;
+}
+
+.load-more {
+  text-align: center;
+  background: #ccc;
+}
+
+@media (max-width: 768px) {
+  .movie-card {
+    width: calc(33.33% - 20px);
+  }
+  .movie-title {
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 576px) {
+  .movie-title {
+    font-size: 0.8rem;
+  }
+}
+
+@-webkit-keyframes blink {
+  20%, 24%, 55% {
+    color: #111;
+    text-shadow: none;
+  }
+
+  0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+    text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+    color: #fff6a9;
+  }
+}
+
+@keyframes blink {
+  20%, 24%, 55% {
+    color: #111;
+    text-shadow: none;
+  }
+  
+  0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+    text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+    color: #fff6a9;
+  }
+}
 

@@ -3,7 +3,7 @@ import React, {useState, useEffect} from "react";
 import Header from "./Header"
 import MoviesContainer from "./MoviesContainer";
 import NewMovieForm from "./NewMovieForm";
-import Watchlist from "./Watchlist";
+import About from "./About";
 import NavBar from "./NavBar";
 import { Outlet } from "react-router-dom";
 
@@ -28,6 +28,11 @@ function App() {
             .catch(error => {console.error("Fetch Error: ", error);})
             setLoading(false)
     }, [])
+/**
+ * this shuffles the elements of an array passed into it
+ * @param {*} array the array of movies
+ * @returns a shuffled array of the original movie array
+ */
     const shuffleArray = (array) => {
         let shuffledArray = [...array];
         for (let i = shuffledArray.length - 1; i > 0; i--) {
@@ -36,12 +41,10 @@ function App() {
         }
         return shuffledArray;
     }
-
     
     const addMovie = (movie) => {
         setMoviesData([...moviesData, movie])
     }
-    // console.log(dataUrl)
     const context= {
         movies: moviesData,
         addMovie,
@@ -50,19 +53,13 @@ function App() {
     }
     return (
         <div>
-            {loading ? ( <h2>Loading...</h2> ) : 
-            (
-                <div className="app">
-                    <NavBar/>
-{/* //                     <MoviesContainer movies={moviesData} loading={loading}/>
-//                     <NewMovieForm addMovie={addMovie} dataUrl={dataUrl} />
-//                     <Watchlist /> */}
-                    <div className="main-content">
+            <div className="app">
+                <NavBar/>
+                <div className="main-content">
                     <Header />
                     <Outlet context={context}/>
-                    </div>
                 </div>
-            )}
+            </div>
         </div>
     );
 }
