@@ -20,4 +20,29 @@ code {
   margin-top: 70px;
 }
 
+.site-header {
+  font-family: 'Metal Mania', Courier, monospace;
+  font-size: 60px;
+}
+.header-test-1{
+  font-family: 'Metal Mania', Courier, monospace;
+  font-size: 60px;
+  font-weight: regular;
+}
+
+.header-test-2 {
+  font-family: 'Metal Mania', Courier, monospace;
+  font-size: 60px;
+}
+
+.header-test-3{
+  font-family: 'Metal Mania', Courier, monospace;
+  font-size: 60px;
+  
+}
+
+.movie-title {
+  font-family: 'Bodoni Moda', serif;
+  font-weight: bold;
+}
 

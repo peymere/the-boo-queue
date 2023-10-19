@@ -12,7 +12,7 @@ function MovieCard({title, posterUrl, runtime, genre, ageRating, watchlist, star
     return (
         <div className= "col-md-3" >
             <div className="card">
-                <h4>{title}({releaseYear})</h4>
+                <h4 className="movie-title">{title}({releaseYear})</h4>
                 <img src={posterUrl} alt={title} loading="lazy" onClick={handleClick}/>
                 <div className="card-body">
                     <p className="card-text"> Runtime: {runtime} minutes</p>

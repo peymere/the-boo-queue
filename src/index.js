@@ -9,6 +9,7 @@ import NewMovieForm from './components/NewMovieForm';
 import Watchlist from './components/Watchlist';
 import ErrorPage from './components/ErrorPage';
 import MoviesContainer from './components/MoviesContainer';
+import About from './components/About';
 
 // const router = createBrowserRouter([
 //   {
@@ -49,8 +50,8 @@ const router = createBrowserRouter ([
             
           },
           {
-            path: "/watchlist",
-            element: <Watchlist />,
+            path: "/about",
+            element: <About />,
             
           }
       ]

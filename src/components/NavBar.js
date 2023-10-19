@@ -11,10 +11,10 @@ function NavBar() {
           Movies
         </NavLink>
         <NavLink 
-        to= "/watchlist"
+        to= "/about"
         className="nav-link" 
         >
-           Watchlist
+           About
         </NavLink>
         <NavLink 
         to= "/addmovie"
