@@ -1,8 +1,22 @@
-* {
-  background: black;
+@font-face {
+  font-family: 'hallowed grounds';
+  src: url('../public/webfontkit-20231019-154811/hallowedgrounds-webfont.woff') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Boruna';
+  src: url('../public/boruna-font/BorunaDemoVersionRegular-vmDA7.otf');
+}
+@font-face {
+  font-family: 'Hellghost';
+  src: url('../public/hellghost-font/HellghostRoughRegular-8MK9A.ttf');
 }
 
+
+
 body {
+  
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -10,6 +24,11 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+/* .app-container {
+  background-color: black;
+} */
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
@@ -42,9 +61,12 @@ code {
   color: white;
 }
 .countdown-title {
-  font-family: 'Flavors';
+  font-family: 'Hellghost';
+  text-transform: uppercase;
+  letter-spacing: 2px;
   font-size: calc(4px + 6vh);
   line-height: calc(1px + 10vh);
+  
 }
 .clock-container {
   display: flex;
@@ -91,8 +113,8 @@ code {
 .hours-label,
 .minutes-label,
 .seconds-label {
-  font-size: 1.4em;
-  font-family: 'Parisienne', cursive;
+  font-size: 1.3em;
+  font-family: 'parisienne', cursive;
   /* text-transform: uppercase; */
   margin-bottom: 5px;
   background: transparent;
@@ -197,16 +219,17 @@ code {
 }
 
 .movie-title {
-  font-family: 'Bodoni Moda', serif;
+  font-family: 'hallowed grounds', serif;
+  text-transform: lowercase;
   font-weight: bold;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
   background: rgba(0, 0, 0, 0.5);
   background-clip: text;
   color: white;
   /* text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; */
   /* background: black; */
 }
-
 
 .button-container {
   padding-top: 10px;
@@ -244,6 +267,14 @@ code {
   }
 }
 
+.footer-container {
+  height: 100px; /* Set the desired height to add space */
+  background-color:#ff8d00; /* Set the background color as needed */
+  text-align: center; /* Center the content within the footer */
+  padding: 20px; /* Add padding for styling */
+  border-top: 1px solid #ddd;
+}
+
 @keyframes blink {
   20%, 24%, 55% {
     color: #111;
@@ -255,159 +286,6 @@ code {
     color: #fff6a9;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -456,6 +334,7 @@ code {
 
 .main-content {
   margin-top: 6.5vh;
+  background: black;
 }
 
 .nav-links {
