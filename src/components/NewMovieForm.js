@@ -49,7 +49,7 @@ function NewMovieForm() {
     return (
     <div className="new-movie-form">
         {/* <header><NavBar/> </header> */}
-        <h4>🧛🎃🦇👻Add a spooky movie💀🎃🧟🕷️</h4>
+        <h4>🧛🎃🦇👻<span>Add a spooky movie</span>💀🎃🧟🕷️</h4>
         <form id="new-movie-form" onSubmit={handleSubmit}>
             <div>
                 <label>Title:</label>
@@ -61,11 +61,11 @@ function NewMovieForm() {
             </div>
             <div>
                 <label> Poster: </label>
-                <input type="text" name="poster" placeholder="Poster URL" required onChange={(e) => setNewMoviePosterUrl(e.target.value)}/>
+                <input type="text" name="poster" placeholder="poster URL" required onChange={(e) => setNewMoviePosterUrl(e.target.value)}/>
             </div>
             <div>
                 <label> Runtime: </label>
-                <input type="number" name="runtime" placeholder="Runtime in minutes" required onChange={(e) => setNewMovieRuntime(e.target.value)}/>
+                <input type="number" name="runtime" placeholder="runtime in minutes" required onChange={(e) => setNewMovieRuntime(e.target.value)}/>
             </div>
             <div>
                 <label>Genre:</label>
