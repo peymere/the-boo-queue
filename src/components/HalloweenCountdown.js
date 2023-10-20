@@ -34,17 +34,17 @@ function HalloweenCountdown() {
               <div className="days">{countdown.days}</div>
               <div className="days-label">Days</div>
             </div>
-            <div class="hours-container">
-              <div class="hours">{countdown.hours}</div>
-              <div class="hours-label">Hours</div>
+            <div className="hours-container">
+              <div className="hours">{countdown.hours}</div>
+              <div className="hours-label">Hours</div>
             </div>
-            <div class="minutes-container">
-              <div class="minutes">{countdown.minutes}</div>
-              <div class="minutes-label">Minutes</div>
+            <div className="minutes-container">
+              <div className="minutes">{countdown.minutes}</div>
+              <div className="minutes-label">Minutes</div>
             </div>
-            <div class="seconds-container">
-              <div class="seconds">{countdown.seconds}</div>
-              <div class="seconds-label">Seconds</div>
+            <div className="seconds-container">
+              <div className="seconds">{countdown.seconds}</div>
+              <div className="seconds-label">Seconds</div>
             </div>
           </div>
         </div>

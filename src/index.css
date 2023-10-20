@@ -364,14 +364,15 @@ code {
 .new-movie-form h4 {
   font-family: 'hallowed grounds';
   color:rgb(236, 113, 13);
+  text-shadow: 0 0 5px yellow;
   font-size: 2rem;
 }
 
 .new-movie-form label {
-  font-family: 'Chiller';
-  font-weight: bold;
-  color: rgb(236, 113, 13);
-  font-size: 1.5rem;
+  font-family: 'Hellghost';
+  color: #ffee029f;
+  text-shadow: 0 0 10px yellow;
+  font-size: 1.8rem;
 }
 
 
@@ -428,23 +429,27 @@ form {
 .new-movie-form input{
   padding: 2px;
   width: 100%;
-  font-family: "Bodoni";
-  font-size: 1.2rem;
-  color: rgb(235, 125, 36)
+  font-family: "Chiller";
+  font-size: 1.5rem;
+  color: rgb(235, 125, 36);
+  text-align: center;
 }
 
 .new-movie-form select {
   padding: 2px;
   width: 100%;
-  font-family: "Bodoni";
+  font-family: "Chiller";
+  font-weight: bold;
   color: rgb(235, 125, 36);
-  font-size: 1.2rem;
+  font-size: 1.5rem;
+  text-align: center;
 }
 
 ::placeholder {
   color: rgb(235, 125, 36);
   text-align: center;
 }
+
 
 /* selects */
 .selector select {
@@ -624,3 +629,12 @@ form {
   "Pink":"FABDC5",
   "Champagne pink":"FAE0D3",
   "Sandy brown":"F49B5F"} */
+
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+input:-webkit-autofill {
+  -webkit-text-fill-color: rgb(235, 125, 36) !important;
+  background-color: #3a04539f !important; 
+  font-family: 'Chiller' !important;
+}
+
