@@ -4,13 +4,14 @@ import React from "react";
 function About() {
     return (
         <div className="about-container">
-            <header className="header">About Us</header>    
-            <img className="img1" src="https://i.pinimg.com/564x/26/33/8a/26338a75200eac99c2edbf03b62c7ebe.jpg" alt="a witch's potion cauldron" height={350} />
+            <header className="header">About Us</header>
+            <img className="img2" src="https://i.pinimg.com/736x/0c/a1/b9/0ca1b9e62d90c6bbc991931e71909279.jpg" alt="a very cute haunted house" height={450} />    
+            <img className="img1" src="https://i.pinimg.com/564x/26/33/8a/26338a75200eac99c2edbf03b62c7ebe.jpg" alt="a witch's potion cauldron" height={400} />
             <h1 className="about-section-header header2">Hey Boo!</h1>       
             <p className="about-text text1" >
                 Welcome to the Boo Queue, your ultimate destination for all things spooky and spine-chilling! We're passionate about Halloween and everything that goes bump in the night, and we've created this site to share our love for the season of scares. 
             </p>
-            <img className="img2" src="https://i.pinimg.com/736x/0c/a1/b9/0ca1b9e62d90c6bbc991931e71909279.jpg" alt="a very cute haunted house" height={400} />
+            <img className="img2" src="https://i.pinimg.com/736x/0c/a1/b9/0ca1b9e62d90c6bbc991931e71909279.jpg" alt="a very cute haunted house" height={450} />
             <h1 className="about-section-header header3">Creepin' It Real</h1>
             <p className="about-text text2">
                 Our team of dedicated horror enthusiasts has carefully curated a selection of the best Halloween movies that are perfect for your eerie evenings. Whether you're a fan of classic slasher flicks, supernatural thrillers, or family-friendly spooky films, we've got you covered. You'll find a mix of timeless classics and hidden gems, each with its own frightful charm.
