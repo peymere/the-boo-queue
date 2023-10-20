@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 // import NavBar from "./NavBar";
-import { useOutletContext } from "react-router";
+import { useOutletContext, useNavigate} from "react-router-dom";
 
 function NewMovieForm() {
     const {addMovie, dataUrl} = useOutletContext();
@@ -10,6 +10,7 @@ function NewMovieForm() {
     const [newMovieGenre, setNewMovieGenre] = useState('')
     const [newMovieAgeRating, setNewMovieAgeRating] = useState('')
     const [newMovieReleaseYear, setMovieNewReleaseYear] = useState(0)
+    const navigate = useNavigate();
     
     console.log(dataUrl)
 
@@ -36,7 +37,10 @@ function NewMovieForm() {
             body: JSON.stringify(newMovieData)
         })
             .then((r) => r.json())
-            .then((newMovie) => addMovie(newMovie))
+            .then((newMovie) => {
+                addMovie(newMovie);
+                navigate('/movies');
+            })
             .catch((error) => console.error('POST error', error))
         e.target.reset()
     }
@@ -45,7 +49,7 @@ function NewMovieForm() {
     return (
     <div className="new-movie-form">
         {/* <header><NavBar/> </header> */}
-        <h4>🧛🎃🦇👻Add your own💀🎃🧟🕷️</h4>
+        <h4>🧛🎃🦇👻Add a spooky movie💀🎃🧟🕷️</h4>
         <form id="new-movie-form" onSubmit={handleSubmit}>
             <div>
                 <label>Title:</label>
