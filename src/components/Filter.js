@@ -4,7 +4,7 @@ function Filter({filters, setFilters}) {
     
     return (
         <div>
-            <select value={filters.ageRating} onChange={(e) => setFilters({ ...filters, ageRating: e.target.value})}>
+            <select className="rating-selector selector" value={filters.ageRating} onChange={(e) => setFilters({ ...filters, ageRating: e.target.value})}>
                 <option value=''>All Age Ratings</option>
                 <option value='G'>Rated G</option>
                 <option value='PG'>Rated PG</option>
@@ -12,7 +12,7 @@ function Filter({filters, setFilters}) {
                 <option value='R'>Rated R</option>
                 <option value='Unrated'>Unrated</option>
             </select>
-            <select value={filters.genre} onChange={(e) => setFilters({ ...filters, genre: e.target.value})} >
+            <select className="genre-selector selector" value={filters.genre} onChange={(e) => setFilters({ ...filters, genre: e.target.value})} >
                 <option value=''>All Genres</option>
                 <option value='classic'>Classics</option>
                 <option value='family'>Family</option>

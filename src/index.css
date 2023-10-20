@@ -446,6 +446,45 @@ form {
   text-align: center;
 }
 
+/* selects */
+.selector select {
+  font-family: 'Modern Antiqua'
+}
+
+.sort-selector {
+  background: #ff8d00;
+  position: relative;
+  font-size: 18px;
+  font-family: 'poppins';
+  border: none;
+  border-radius: 8px;
+  width: 155px;
+  text-align: center;
+}
+
+.rating-selector {
+  background: #ff8d00;
+  font-size: 18px;
+  font-family: 'poppins';
+  border: none;
+  border-radius: 8px;
+  width: 155px;
+  text-align: center;
+}
+
+.genre-selector {
+  margin-left: 20px;
+  background: #ff8d00;
+  font-size: 18px;
+  font-family: 'poppins';
+  border: none;
+  border-radius: 8px;
+  width: 155px;
+  text-align: center;
+}
+
+
+
 
 /* about us page */
 .about-container {
@@ -485,14 +524,7 @@ form {
   text-align: center;
 }
 
-/* .parent {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(7, 1fr);
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
-  } */
-  
+
 .header { grid-area: 1 / 2 / 2 / 4; }
 .img1 { grid-area: 2 / 1 / 3 / 3; }
 .header2 { grid-area: 2 / 4 / 3 / 5; }
