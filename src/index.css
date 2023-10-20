@@ -35,13 +35,6 @@ code {
     monospace;
 }
 
-/* .custom-navbar {
-  background-color: rgb(236, 113, 13);
-}
-
-.main-content {
-  margin-top: 70px;
-} */
 
 .site-header {
   padding-top: 30px;
@@ -64,10 +57,11 @@ code {
 .countdown-title {
   font-family: 'Hellghost';
   text-transform: uppercase;
+  color: #edf2ef;
   letter-spacing: 2px;
-  font-size: calc(4px + 6vh);
+  font-size: calc(10px + 6vh);
   line-height: calc(1px + 10vh);
-  
+  text-shadow: 0 1px 0px #378ab4, 1px 0 0px #5dabcd, 1px 2px 1px #378ab4, 2px 1px 1px #5dabcd, 2px 3px 2px #378ab4, 3px 2px 2px #5dabcd, 3px 4px 2px #378ab4, 4px 3px 3px #5dabcd, 4px 5px 3px #378ab4, 5px 4px 2px #5dabcd, 5px 6px 2px #378ab4, 6px 5px 2px #5dabcd, 6px 7px 1px #378ab4, 7px 6px 1px #5dabcd;
 }
 .clock-container {
   display: flex;
@@ -128,7 +122,7 @@ code {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  background: rgba(0, 0, 0, 0.7);
+  background: inherit;
 }
 
 .sort-filter-container {
@@ -149,7 +143,7 @@ code {
   /* border: 1px solid #ccc; */
   padding: 8px;
   text-align: center;
-  background: rgba(0, 0, 0, 0.7);
+  background: inherit;
   /* border: 2px solid red; */
   position: relative;
   border-radius: 10px;
@@ -180,9 +174,9 @@ code {
 }
 
 .card-text {
-  font-family: 'poppins';
+  font-family: 'Bodoni Moda', serif;
   background: transparent;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: bold;
 }
 .runtime-text {
@@ -195,7 +189,7 @@ code {
 
 .poster-container{
   width: 100%;
-  height: 315px;
+  height: 335px;
   /* overflow: hidden; */
   position: relative;
   /* border: 1px solid white; */
@@ -205,11 +199,13 @@ code {
 .movie-img{
   max-width: 100%;
   max-height: 100%;
-  height: 100%;
-  width: 100%;
+  height: 300px;
+  width: 220px;
+  /* height: 100%;
+  width: 100%; */
   filter: blur(0);
-  transition: 0.3s ease-in-out;
-  object-fit: contain;
+  transition: 0.2s ease-in-out;
+  /* object-fit: contain; */
 }
 .movie-img:hover {
   filter: blur(5px);
@@ -219,7 +215,7 @@ code {
   font-family: 'hallowed grounds', serif;
   text-transform: lowercase;
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 24;
   letter-spacing: 2px;
   background: rgba(0, 0, 0, 0.5);
   background-clip: text;
@@ -231,12 +227,33 @@ code {
 .button-container {
   padding-top: 10px;
   text-align: center;
+  padding-bottom: 20px;
 }
 
 .load-more {
-  text-align: center;
-  background: #ccc;
+  cursor: pointer;
+  color: #240046;
+  background: #ff9e00;
+  border: 1px solid #240046;
+  box-shadow: 3px 3px 1px 1px #ff7900, 3px 3px 1px 1px #ff6d00;
+  font-family: 'Bodoni Moda', serif;
+  font-size: 30px;
+  font-weight: 600;
+  height: 5rem;
+  width: 12rem;
+  outline: none;
+  border-radius: 6rem;
+  letter-spacing: 0px;
 }
+.load-more:hover {
+  color: #ff6d00;
+  background: #5a189a;
+  border: 1px solid #ff6d00;
+  box-shadow: 3px 3px 1px 1px #3c096c, 3px 3px 1px 1px #240046;
+}
+
+
+
 
 @media (max-width: 768px) {
   .movie-card {
@@ -265,11 +282,11 @@ code {
 }
 
 .footer-container {
-  height: 100px; /* Set the desired height to add space */
-  background-color:#ff8d00; /* Set the background color as needed */
-  text-align: center; /* Center the content within the footer */
-  padding: 20px; /* Add padding for styling */
-  border-top: 1px solid #ddd;
+  height: 100%;
+  background-color:#ff8d00;
+  text-align: center;
+  padding: 25px; 
+  margin-top: 40px;
 }
 
 @keyframes blink {
@@ -285,32 +302,13 @@ code {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .custom-navbar {
-  background-color: rgb(236, 113, 13);
+  background-color: #ff8d00;
   font-family: 'Hellghost';
   font-weight: bold;
-  font-size: 1.5rem;
-  height: 4.5rem
+  font-size: 2.2rem;
+  height: 4.5rem;
+  flex-grow: 0;
 }
 
 @media (max-width: 768px) {
@@ -331,20 +329,20 @@ code {
 
 .main-content {
   margin-top: 6.5vh;
-  background: black;
+  background: #412A3D;
 }
 
 .nav-links {
   list-style: none;
   display: flex;
   justify-content: space-between;
-  padding: 0;
+  padding: 18px 5px 10px 5px;
   width: 100%;
-  background-color: rgb(236, 113, 13);
+  /* background-color: rgb(236, 113, 13); */
 }
 
 .nav-links li{
-  background-color: rgb(236, 113, 13);
+  /* background-color: rgb(236, 113, 13); */
   margin: 0 100px;
 }
 
@@ -447,3 +445,72 @@ form {
   color: rgb(235, 125, 36);
   text-align: center;
 }
+
+
+/* about us page */
+.about-container {
+  color: white;
+  margin: 5%;
+  background: #A78AB7;
+  display: grid;
+  grid-template-columns: repeat(4, .5fr);
+  grid-template-rows: repeat(5, .5fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.header {
+  font-family: 'boruna';
+  font-size: 100px;
+  text-align: center;
+  margin: 0em 0 -1em;
+  color: #db5b34;
+  z-index: 4;
+}
+
+.about-section-header {
+  font-family: 'boruna';
+  font-size: 60px;
+  color:#ffac88;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header2 {
+  margin-left: -4em;
+}
+
+.about-text {
+  text-align: center;
+}
+
+/* .parent {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(7, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  } */
+  
+.header { grid-area: 1 / 2 / 2 / 4; }
+.img1 { grid-area: 2 / 1 / 3 / 3; }
+.header2 { grid-area: 2 / 4 / 3 / 5; }
+.text1 { grid-area: 3 / 3 / 4 / 4; }
+.img2 { grid-area: 4 / 3 / 5 / 5; }
+.text2 { grid-area: 3 / 1 / 4 / 2; }
+.header3 { grid-area: 4 / 2 / 5 / 3; }
+.img3 { grid-area: 5 / 1 / 6 / 3; }
+.header4 { grid-area: 5 / 3 / 6 / 4; }
+.text3 { grid-area: 5 / 4 / 6 / 5; }
+
+
+
+
+
+
+/* {"Jet":"393431",
+  "Raisin black":"26201E",
+  "Pink":"FABDC5",
+  "Champagne pink":"FAE0D3",
+  "Sandy brown":"F49B5F"} */
