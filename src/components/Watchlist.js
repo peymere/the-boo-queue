@@ -1,5 +1,4 @@
 import React from "react";
-import {useOutletContext} from "react-router"
 // import NavBar from "./NavBar";
 
 function Watchlist() {

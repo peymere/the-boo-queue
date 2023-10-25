@@ -1,9 +1,6 @@
 // import "src/App.css"
 import React, {useState, useEffect} from "react";
 import Header from "./Header"
-import MoviesContainer from "./MoviesContainer";
-import NewMovieForm from "./NewMovieForm";
-import About from "./About";
 import NavBar from "./NavBar";
 import { Outlet } from "react-router-dom";
 import Footer from "./Footer";

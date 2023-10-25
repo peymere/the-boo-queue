@@ -29,7 +29,7 @@ export default About;
 
 
 // <h1 className="about-title">About</h1>
-{/* <p className="about-text">
+/* <p className="about-text">
 Welcome to the Boo Queue, your ultimate destination for all things spooky and spine-chilling! We're passionate about Halloween and everything that goes bump in the night, and we've created this site to share our love for the season of scares. 
 </p>
 <p className="about-text">
@@ -37,4 +37,4 @@ Our team of dedicated horror enthusiasts has carefully curated a selection of th
 </p>
 <p className="about-text">
 So, grab your popcorn, dim the lights, and join us on a hair-raising journey through the world of Halloween cinema. Whether you're seeking to revisit your favorite ghoulish classics or discover new blood-curdling tales, the Boo Queue is here to be your trusted companion in the dark. Let's make this Halloween season one to remember!
-</p> */}
+</p> */

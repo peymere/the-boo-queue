@@ -6,7 +6,6 @@ import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { createBrowserRouter, RouterProvider} from "react-router-dom"
 import NewMovieForm from './components/NewMovieForm';
-import Watchlist from './components/Watchlist';
 import ErrorPage from './components/ErrorPage';
 import MoviesContainer from './components/MoviesContainer';
 import About from './components/About';

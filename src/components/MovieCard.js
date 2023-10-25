@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React from "react";
 
 
 function MovieCard({title, posterUrl, runtime, genre, ageRating, watchlist, starRating, releaseYear}) {
