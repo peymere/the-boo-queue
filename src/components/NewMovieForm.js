@@ -19,10 +19,10 @@ function NewMovieForm() {
         posterUrl : newMoviePosterUrl,
         runtime: newMovieRuntime,
         genre: newMovieGenre,
-        ['age-rating']: newMovieAgeRating,
+        'age-rating': newMovieAgeRating,
         watchlist: false,
-        ['star-rating']: "",
-        ['release-year']: newMovieReleaseYear
+        'star-rating': "",
+        'release-year': newMovieReleaseYear
     }
 
     const handleSubmit = (e) => {

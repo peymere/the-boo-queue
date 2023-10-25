@@ -151,7 +151,7 @@ code {
 }
 .movie-card:hover .movie-info{
   display: block;
-  background: url("");
+  /* background: url(""); */
 }
 .movie-card:hover img{
   filter: blur(5px);
